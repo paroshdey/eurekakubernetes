@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: client1
+  labels:
+    app: client1
+    version: 0.1.0
+  namespace: md
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client1
+  template:
+    metadata:
+      labels:
+        app: client1
+    spec:
+      containers:
+      - name: client1
+        image: client1
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: IfNotPresent #For local dev, use local docker repo

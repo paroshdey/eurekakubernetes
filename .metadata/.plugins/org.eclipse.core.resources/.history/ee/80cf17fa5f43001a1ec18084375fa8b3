@@ -1,0 +1,16 @@
+package com.amdocs.EurekaClient2.Controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Client2Controller {
+
+	@GetMapping
+	public String getData() {
+		
+		return "Example of Service Discovery from client 2";
+
+	}
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;deployment.yml&apos; to &apos;EurekaServer&apos;&#x0D;&#x0A;- Original project: &apos;EurekaClient2&apos;&#x0D;&#x0A;- Destination element: &apos;EurekaServer&apos;&#x0D;&#x0A;- Original element: &apos;deployment.yml&apos;" description="Copy file" element1="deployment.yml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1580462859748" target="/EurekaServer" units="0" version="1.0"/>
+</session>

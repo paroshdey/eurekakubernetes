@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: eurekaserver
+  labels:
+    app: eurekaserver
+    version: 0.1.0
+  namespace: md
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: eurekaserver
+  template:
+    metadata:
+      labels:
+        app: eurekaserver
+    spec:
+      containers:
+      - name: eurekaserver
+        image: server
+        ports:
+        - containerPort: 8761
+        imagePullPolicy: IfNotPresent #For local dev, use local docker repo
